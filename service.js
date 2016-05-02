@@ -6,15 +6,15 @@
         avatar = document.querySelector('#avatar'),
         presence = document.querySelector('#presence');
 
-    var channel = 'giphy-chat';
+    var channel = 'demo';
 
     // Assign a random avatar in random color
     avatar.className = 'face-' + ((Math.random() * 13 + 1) >>> 0) + ' color-' + ((Math.random() * 10 + 1) >>> 0);
 
     // Hey, when you fork this and try by yourself, please use your own keys! Get your keys at http://admin.pubnub.com
     var p = PUBNUB.init({
-        subscribe_key: 'sub-c-182105ac-0001-11e5-8fd4-0619f8945a4f',
-        publish_key: 'pub-c-ce04f67b-0f26-43ce-8be2-192e9821d1a3'
+        subscribe_key: 'sub-c-9bdc0d48-1080-11e6-bb6c-02ee2ddab7fe',
+        publish_key: 'pub-c-f7d6baf6-ca40-44a9-9bc2-811a8b33c929'
     });
 
     // PubNub Playback to fetch past messages
